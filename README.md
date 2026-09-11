@@ -1,10 +1,10 @@
 # 🎬 Movie Recommender System
 
-A content-based movie recommendation system built with **Python**, **Scikit-Learn (TF-IDF & Cosine Similarity)**, and **Streamlit**, trained on the **TMDB 5000 Movies & Credits Dataset**.
+A content-based movie recommendation system built with **Python**, **Scikit-Learn (CountVectorizer & Cosine Similarity)**, and **Streamlit**, trained on the **TMDB 5000 Movies & Credits Dataset**.
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit%20Cloud-ff4b4b?style=for-the-badge&logo=streamlit&logoColor=white)](https://proswarnali24-movie-recommender-system-app-ajvvsv.streamlit.app/)
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-TF--IDF%20%26%20Cosine%20Similarity-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-CountVectorizer%20%26%20Cosine%20Similarity-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-proswarnali24-181717?style=for-the-badge&logo=github&logoColor=white)
 
 ---
@@ -32,12 +32,12 @@ Access the live deployed application here:
 ## 🏗️ Architecture & Model Pipeline
 
 1. **Dataset Integration**: Loads `tmdb_5000_movies.csv` and `tmdb_5000_credits.csv`.
-2. **Feature Extraction & NLP**:
+2. **Feature Extraction & Text Processing**:
    - `overview`: Plot summary tokenization.
    - `genres` & `keywords`: Extracted tag names.
    - `cast`: Top 4 lead actors.
    - `crew`: Extracted Director name.
-3. **Vectorization**: `TfidfVectorizer` (max features: 6,000, English stop words removed).
+3. **Vectorization**: `CountVectorizer` (max features: 5,000, English stop words removed).
 4. **Similarity Computation**: `Cosine Similarity` matrix calculation.
 5. **Model Export**: Serializes model objects to `model/movie_list.pkl`, `model/similarity.pkl`, and `model/movies_data.json`.
 

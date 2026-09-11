@@ -276,7 +276,7 @@ view_mode = st.sidebar.radio("Explore Mode", ["🎯 Similarity Recommender", "�
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("### 📊 Dataset Info")
-st.sidebar.info(f"**Total Movies:** {len(movies):,}\n\n**Feature Vectors:** TF-IDF & Cosine Similarity\n\n**Source:** TMDB 5000 Database")
+st.sidebar.info(f"**Total Movies:** {len(movies):,}\n\n**Feature Vectors:** CountVectorizer & Cosine Similarity\n\n**Source:** TMDB 5000 Database")
 
 # ---------------------------------------------------------
 # MAIN TAB 1: SIMILARITY RECOMMENDER
@@ -426,6 +426,6 @@ elif view_mode == "⭐ Top Rated Movies":
 st.markdown("---")
 st.markdown("""
 <div style="text-align: center; color: #64748b; font-size: 0.85rem; padding: 1rem 0;">
-    Movie Recommender System • Powered by Scikit-Learn TF-IDF, Streamlit & TMDB Database
+    Movie Recommender System • Powered by CountVectorizer, Cosine Similarity & TMDB Database
 </div>
 """, unsafe_allow_html=True)

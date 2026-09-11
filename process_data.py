@@ -4,7 +4,7 @@ import json
 import pickle
 import numpy as np
 import pandas as pd
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 print("Starting Movie Data Processing Pipeline...")
@@ -100,9 +100,9 @@ movies['tags'] = (
 
 movies['tags_str'] = movies['tags'].apply(lambda x: " ".join(x).lower())
 
-print("Computing TF-IDF vectors and Cosine Similarity Matrix...")
-tfidf = TfidfVectorizer(max_features=6000, stop_words='english')
-vectors = tfidf.fit_transform(movies['tags_str']).toarray()
+print("Computing Bag of Words vectors and Cosine Similarity Matrix...")
+cv = CountVectorizer(max_features=5000, stop_words='english')
+vectors = cv.fit_transform(movies['tags_str']).toarray()
 
 similarity = cosine_similarity(vectors).astype(np.float32)
 
