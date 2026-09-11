@@ -2,10 +2,17 @@
 
 A content-based movie recommendation system built with **Python**, **Scikit-Learn (TF-IDF & Cosine Similarity)**, and **Streamlit**, trained on the **TMDB 5000 Movies & Credits Dataset**.
 
-![Streamlit](https://img.shields.io/badge/Streamlit-App-ff4b4b?style=for-the-badge&logo=streamlit&logoColor=white)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit%20Cloud-ff4b4b?style=for-the-badge&logo=streamlit&logoColor=white)](https://proswarnali24-movie-recommender-system-app-ajvvsv.streamlit.app/)
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-TF--IDF%20%26%20Cosine%20Similarity-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-proswarnali24-181717?style=for-the-badge&logo=github&logoColor=white)
+
+---
+
+## 🌐 Live Application
+
+Access the live deployed application here:  
+👉 **[https://proswarnali24-movie-recommender-system-app-ajvvsv.streamlit.app/](https://proswarnali24-movie-recommender-system-app-ajvvsv.streamlit.app/)**
 
 ---
 
@@ -89,13 +96,9 @@ Make sure you have Python 3.10+ installed.
 
 ## ☁️ Deployment Guide
 
-### Deploy on Streamlit Community Cloud (1-Click - Recommended)
+### Streamlit Community Cloud (Live Production App)
 
-[![Deploy to Streamlit Cloud](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/deploy?repository=proswarnali24/Movie-Recommender-System&branch=main&mainModule=app.py)
-
-1. Click **[Deploy to Streamlit Cloud](https://share.streamlit.io/deploy?repository=proswarnali24/Movie-Recommender-System&branch=main&mainModule=app.py)**.
-2. Sign in with your GitHub account (`proswarnali24`).
-3. Click **Deploy!**
+- **Live URL**: [https://proswarnali24-movie-recommender-system-app-ajvvsv.streamlit.app/](https://proswarnali24-movie-recommender-system-app-ajvvsv.streamlit.app/)
 
 ---
 
@@ -112,5 +115,6 @@ The repository includes `Procfile`, `setup.sh`, `requirements.txt`, and `runtime
 
 ## 👤 Author
 
+- **Live Application**: [Streamlit Live Demo](https://proswarnali24-movie-recommender-system-app-ajvvsv.streamlit.app/)
 - **GitHub**: [@proswarnali24](https://github.com/proswarnali24)
 - **Repository**: [Movie-Recommender-System](https://github.com/proswarnali24/Movie-Recommender-System)
