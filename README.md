@@ -68,5 +68,19 @@ movie_recommender_system/
 3. Connect your repository and select `app.py` as the main file path.
 4. Click **Deploy**!
 
-### Deploy on Render / Heroku
-Use the included `Procfile` and `setup.sh` to deploy directly as a web service.
+### Deploy on Heroku
+The repository is pre-configured with `Procfile`, `setup.sh`, `requirements.txt`, and `runtime.txt`:
+
+#### Method 1: Heroku Dashboard (Recommended)
+1. Go to [dashboard.heroku.com/new-app](https://dashboard.heroku.com/new-app)
+2. Create an app (e.g., `movie-recommender-system-app`)
+3. Connect your GitHub repository `proswarnali24/Movie-Recommender-System`
+4. Click **Deploy Branch** (`main`)
+
+#### Method 2: Heroku CLI
+```bash
+npx heroku login
+npx heroku create movie-recommender-system-app
+git push heroku main
+npx heroku open
+```
